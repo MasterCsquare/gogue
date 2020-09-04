@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://level/TileSetResource.tres" type="TileSet" id=1]
+[ext_resource path="res://level/Level.gd" type="Script" id=2]
+
+
+
+
+
+[node name="Map" type="TileMap"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 8
+format = 1
+script = ExtResource( 2 )
+

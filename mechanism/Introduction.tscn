@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://arts/wqy-microhei.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://mechanism/next.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 1 )
+
+[node name="Introduction" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Story" type="Label" parent="."]
+margin_left = 140.0
+margin_top = 100.0
+margin_right = 1140.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 1 )
+text = "   你刚刚从当地的战士公会毕业。经历了许多酸甜苦辣，你完成了训练，准备
+   去展开一场危险的冒险。作为对你所学的测试，公会会长要求你去末日地下
+   城。你的任务是拿回【炎多的护身符】。完成这项任务，你将成为公会正式
+   的一员。另外，你可以保留从地下城拿到的所有财宝。
+
+   为了你的旅程，会长给了你一把附了魔的狼牙棒，一把弓，和一袋从黑山的
+   龙处拿来的箭。你还得到了精灵制作的铠甲以及足够到达地下城入口的粮食。
+   你向亲人和朋友们告别，这可能是最后的告别，接着你踏上了旅途。
+
+   经过几天平静的旅程，你看到了古代遗迹的地下城入口。天色已晚，你在入
+   口处露营，进入梦乡。新的早晨，你拿上武器，穿上铠甲，吃完剩下的食物，
+   进入了地下城。
+"
+
+[node name="Next" type="Button" parent="."]
+margin_left = 970.0
+margin_top = 600.0
+margin_right = 1190.0
+margin_bottom = 690.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_hover = Color( 0.913725, 0.717647, 0.054902, 1 )
+custom_colors/font_color_pressed = Color( 0.913725, 0.717647, 0.054902, 1 )
+text = "继续"
+flat = true
+script = ExtResource( 2 )
+

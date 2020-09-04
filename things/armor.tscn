@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://arts/armor/leather.png" type="Texture" id=1]
+[ext_resource path="res://arts/armor/ring.png" type="Texture" id=2]
+[ext_resource path="res://arts/armor/studded_leather.png" type="Texture" id=3]
+[ext_resource path="res://arts/armor/scale.png" type="Texture" id=4]
+[ext_resource path="res://arts/armor/chain.png" type="Texture" id=5]
+[ext_resource path="res://arts/armor/splint.png" type="Texture" id=6]
+[ext_resource path="res://arts/armor/banded.png" type="Texture" id=7]
+[ext_resource path="res://arts/armor/plate.png" type="Texture" id=8]
+
+[node name="armor" type="Node2D"]
+
+[node name="leather armor" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="leather armor"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="ring mail" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="ring mail"]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="studded leather armor" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="studded leather armor"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="scale mail" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="scale mail"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="chain mail" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="chain mail"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="splint mail" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="splint mail"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="banded mail" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="banded mail"]
+texture = ExtResource( 7 )
+centered = false
+
+[node name="plate mail" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="plate mail"]
+texture = ExtResource( 8 )
+centered = false
+

@@ -1,0 +1,527 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Objects.gd" type="Script" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Monster.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Monster.gd" type="Script" id=4]
+[ext_resource path="res://Things.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Things.gd" type="Script" id=6]
+
+[node name="Objects" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+editor/display_folded = true
+z_index = 1
+
+[node name="Monster" parent="." instance=ExtResource( 3 )]
+editor/display_folded = true
+z_index = 1
+script = ExtResource( 4 )
+
+[node name="aquator" parent="Monster" index="0"]
+script = ExtResource( 4 )
+Exp = 20
+Lv = 5
+Arm = 2
+monster_name = "尘怪"
+
+[node name="bat" parent="Monster" index="1"]
+script = ExtResource( 4 )
+Exp = 1
+Lv = 1
+Arm = 3
+Min_dmg = 1
+Max_dmg = 2
+monster_name = "蝙蝠"
+
+[node name="centaur" parent="Monster" index="2"]
+script = ExtResource( 4 )
+Exp = 17
+Lv = 4
+Arm = 4
+Min_dmg = 1
+Max_dmg = 5
+monster_name = "半人马"
+
+[node name="dragon" parent="Monster" index="3"]
+script = ExtResource( 4 )
+Exp = 5000
+Lv = 10
+Arm = -1
+Min_dmg = 3
+Max_dmg = 10
+monster_name = "龙"
+
+[node name="emu" parent="Monster" index="4"]
+script = ExtResource( 4 )
+Exp = 2
+Lv = 1
+Arm = 7
+Min_dmg = 1
+Max_dmg = 2
+monster_name = "鸸鹋"
+
+[node name="venus flytrap" parent="Monster" index="5"]
+script = ExtResource( 4 )
+Exp = 80
+Lv = 8
+Arm = 3
+monster_name = "捕蝇草"
+
+[node name="griffin" parent="Monster" index="6"]
+script = ExtResource( 4 )
+Exp = 2000
+Lv = 13
+Arm = 2
+Min_dmg = 3
+Max_dmg = 5
+monster_name = "格里芬"
+
+[node name="hobgobin" parent="Monster" index="7"]
+script = ExtResource( 4 )
+Exp = 3
+Lv = 1
+Arm = 5
+Min_dmg = 1
+Max_dmg = 8
+monster_name = "哥布林"
+
+[node name="ice monster" parent="Monster" index="8"]
+script = ExtResource( 4 )
+Exp = 5
+Lv = 1
+Arm = 9
+monster_name = "冰怪"
+
+[node name="jabberwock" parent="Monster" index="9"]
+editor/display_folded = true
+script = ExtResource( 4 )
+Exp = 3000
+Lv = 15
+Arm = 6
+Min_dmg = 2
+Max_dmg = 12
+monster_name = "魔龙"
+
+[node name="kestrel" parent="Monster" index="10"]
+script = ExtResource( 4 )
+Exp = 1
+Lv = 1
+Arm = 7
+Min_dmg = 1
+Max_dmg = 4
+monster_name = "晶鸟"
+
+[node name="leprechaun" parent="Monster" index="11"]
+script = ExtResource( 4 )
+Exp = 10
+Lv = 3
+Arm = 8
+Min_dmg = 1
+Max_dmg = 1
+monster_name = "小妖精"
+
+[node name="medusa" parent="Monster" index="12"]
+script = ExtResource( 4 )
+Exp = 200
+Lv = 8
+Arm = 2
+Min_dmg = 3
+Max_dmg = 4
+monster_name = "美杜莎"
+
+[node name="nymph" parent="Monster" index="13"]
+script = ExtResource( 4 )
+Exp = 37
+Lv = 3
+Arm = 9
+monster_name = "仙女"
+
+[node name="orc" parent="Monster" index="14"]
+script = ExtResource( 4 )
+Exp = 5
+Lv = 1
+Arm = 6
+Min_dmg = 1
+Max_dmg = 8
+monster_name = "矮人"
+
+[node name="phantom" parent="Monster" index="15"]
+script = ExtResource( 4 )
+Exp = 120
+Lv = 8
+Arm = 3
+Min_dmg = 4
+Max_dmg = 4
+monster_name = "幽灵"
+
+[node name="quagga" parent="Monster" index="16"]
+script = ExtResource( 4 )
+Exp = 15
+Lv = 3
+Arm = 3
+Min_dmg = 1
+Max_dmg = 5
+monster_name = "斑驴"
+
+[node name="rattlesnake" parent="Monster" index="17"]
+script = ExtResource( 4 )
+Exp = 9
+Lv = 2
+Arm = 3
+Min_dmg = 1
+Max_dmg = 6
+monster_name = "响尾蛇"
+
+[node name="snake" parent="Monster" index="18"]
+script = ExtResource( 4 )
+Exp = 2
+Lv = 1
+Arm = 5
+Min_dmg = 1
+Max_dmg = 3
+monster_name = "蛇"
+
+[node name="troll" parent="Monster" index="19"]
+script = ExtResource( 4 )
+Exp = 120
+Lv = 6
+Arm = 4
+Min_dmg = 1
+Max_dmg = 8
+monster_name = "巨魔"
+
+[node name="black unicorn" parent="Monster" index="20"]
+script = ExtResource( 4 )
+Exp = 190
+Lv = 7
+Arm = -2
+Min_dmg = 2
+Max_dmg = 9
+monster_name = "黑影"
+
+[node name="vampire" parent="Monster" index="21"]
+script = ExtResource( 4 )
+Exp = 350
+Lv = 8
+Arm = 1
+Min_dmg = 1
+Max_dmg = 10
+monster_name = "吸血鬼"
+
+[node name="wraith" parent="Monster" index="22"]
+script = ExtResource( 4 )
+Exp = 55
+Lv = 5
+Arm = 4
+Min_dmg = 1
+Max_dmg = 6
+monster_name = "鬼魂"
+
+[node name="xeroc" parent="Monster" index="23"]
+script = ExtResource( 4 )
+Exp = 100
+Lv = 7
+Arm = 7
+Min_dmg = 4
+Max_dmg = 4
+monster_name = "xeroc"
+
+[node name="yeti" parent="Monster" index="24"]
+script = ExtResource( 4 )
+Exp = 50
+Lv = 4
+Arm = 6
+Min_dmg = 1
+Max_dmg = 6
+monster_name = "雪人"
+
+[node name="zombie" parent="Monster" index="25"]
+script = ExtResource( 4 )
+Exp = 6
+Lv = 2
+Arm = 8
+Min_dmg = 1
+Max_dmg = 8
+monster_name = "僵尸"
+
+[node name="Things" parent="." instance=ExtResource( 5 )]
+visible = true
+script = ExtResource( 6 )
+
+[node name="armor" parent="Things" index="0"]
+editor/display_folded = true
+script = null
+
+[node name="leather armor" parent="Things/armor" index="0"]
+script = ExtResource( 6 )
+
+[node name="ring mail" parent="Things/armor" index="1"]
+script = ExtResource( 6 )
+
+[node name="studded leather armor" parent="Things/armor" index="2"]
+script = ExtResource( 6 )
+
+[node name="scale mail" parent="Things/armor" index="3"]
+script = ExtResource( 6 )
+
+[node name="chain mail" parent="Things/armor" index="4"]
+script = ExtResource( 6 )
+
+[node name="splint mail" parent="Things/armor" index="5"]
+script = ExtResource( 6 )
+
+[node name="banded mail" parent="Things/armor" index="6"]
+script = ExtResource( 6 )
+
+[node name="plate mail" parent="Things/armor" index="7"]
+script = ExtResource( 6 )
+
+[node name="potions" parent="Things" index="1"]
+editor/display_folded = true
+
+[node name="confusion" parent="Things/potions" index="0"]
+script = ExtResource( 6 )
+
+[node name="hallucination" parent="Things/potions" index="1"]
+script = ExtResource( 6 )
+
+[node name="poison" parent="Things/potions" index="2"]
+script = ExtResource( 6 )
+
+[node name="gain strength" parent="Things/potions" index="3"]
+script = ExtResource( 6 )
+
+[node name="see invisible" parent="Things/potions" index="4"]
+script = ExtResource( 6 )
+
+[node name="healing" parent="Things/potions" index="5"]
+script = ExtResource( 6 )
+
+[node name="monster detection" parent="Things/potions" index="6"]
+script = ExtResource( 6 )
+
+[node name="magic detection" parent="Things/potions" index="7"]
+script = ExtResource( 6 )
+
+[node name="raise level" parent="Things/potions" index="8"]
+script = ExtResource( 6 )
+
+[node name="extra healing" parent="Things/potions" index="9"]
+script = ExtResource( 6 )
+
+[node name="haste self" parent="Things/potions" index="10"]
+script = ExtResource( 6 )
+
+[node name="restore strength" parent="Things/potions" index="11"]
+script = ExtResource( 6 )
+
+[node name="blindness" parent="Things/potions" index="12"]
+script = ExtResource( 6 )
+
+[node name="levitation" parent="Things/potions" index="13"]
+script = ExtResource( 6 )
+
+[node name="ring" parent="Things" index="2"]
+editor/display_folded = true
+
+[node name="protection" parent="Things/ring" index="0"]
+script = ExtResource( 6 )
+
+[node name="add strength" parent="Things/ring" index="1"]
+script = ExtResource( 6 )
+
+[node name="sustain strength" parent="Things/ring" index="2"]
+script = ExtResource( 6 )
+
+[node name="searching" parent="Things/ring" index="3"]
+script = ExtResource( 6 )
+
+[node name="see invisible" parent="Things/ring" index="4"]
+script = ExtResource( 6 )
+
+[node name="adornment" parent="Things/ring" index="5"]
+script = ExtResource( 6 )
+
+[node name="aggravate monster" parent="Things/ring" index="6"]
+script = ExtResource( 6 )
+
+[node name="dexterity" parent="Things/ring" index="7"]
+script = ExtResource( 6 )
+
+[node name="increase damage" parent="Things/ring" index="8"]
+script = ExtResource( 6 )
+
+[node name="regeneration" parent="Things/ring" index="9"]
+script = ExtResource( 6 )
+
+[node name="slow digestion" parent="Things/ring" index="10"]
+script = ExtResource( 6 )
+
+[node name="teleportation" parent="Things/ring" index="11"]
+script = ExtResource( 6 )
+
+[node name="stealth" parent="Things/ring" index="12"]
+script = ExtResource( 6 )
+
+[node name="maintain armor" parent="Things/ring" index="13"]
+script = ExtResource( 6 )
+
+[node name="scrolls" parent="Things" index="3"]
+editor/display_folded = true
+
+[node name="monster confusion" parent="Things/scrolls" index="0"]
+script = ExtResource( 6 )
+
+[node name="magic mapping" parent="Things/scrolls" index="1"]
+script = ExtResource( 6 )
+
+[node name="hold monster" parent="Things/scrolls" index="2"]
+script = ExtResource( 6 )
+
+[node name="sleep" parent="Things/scrolls" index="3"]
+script = ExtResource( 6 )
+
+[node name="enchant armor" parent="Things/scrolls" index="4"]
+script = ExtResource( 6 )
+
+[node name="identify potion" parent="Things/scrolls" index="5"]
+script = ExtResource( 6 )
+
+[node name="identify scroll" parent="Things/scrolls" index="6"]
+script = ExtResource( 6 )
+
+[node name="identify weapon" parent="Things/scrolls" index="7"]
+script = ExtResource( 6 )
+
+[node name="identify armor" parent="Things/scrolls" index="8"]
+script = ExtResource( 6 )
+
+[node name="identify ring, wand or staff" parent="Things/scrolls" index="9"]
+script = ExtResource( 6 )
+
+[node name="scare monster" parent="Things/scrolls" index="10"]
+script = ExtResource( 6 )
+
+[node name="food detection" parent="Things/scrolls" index="11"]
+script = ExtResource( 6 )
+
+[node name="teleportation" parent="Things/scrolls" index="12"]
+script = ExtResource( 6 )
+
+[node name="enchant weapon" parent="Things/scrolls" index="13"]
+script = ExtResource( 6 )
+
+[node name="create monster" parent="Things/scrolls" index="14"]
+script = ExtResource( 6 )
+
+[node name="remove curse" parent="Things/scrolls" index="15"]
+script = ExtResource( 6 )
+
+[node name="aggravate monsters" parent="Things/scrolls" index="16"]
+script = ExtResource( 6 )
+
+[node name="protect armor" parent="Things/scrolls" index="17"]
+script = ExtResource( 6 )
+
+[node name="wand" parent="Things" index="4"]
+editor/display_folded = true
+
+[node name="light" parent="Things/wand" index="0"]
+script = ExtResource( 6 )
+
+[node name="invisibility" parent="Things/wand" index="1"]
+script = ExtResource( 6 )
+
+[node name="lightning" parent="Things/wand" index="2"]
+script = ExtResource( 6 )
+
+[node name="fire" parent="Things/wand" index="3"]
+script = ExtResource( 6 )
+
+[node name="cold" parent="Things/wand" index="4"]
+script = ExtResource( 6 )
+
+[node name="polymorph" parent="Things/wand" index="5"]
+script = ExtResource( 6 )
+
+[node name="magic missile" parent="Things/wand" index="6"]
+script = ExtResource( 6 )
+
+[node name="haste monster" parent="Things/wand" index="7"]
+script = ExtResource( 6 )
+
+[node name="slow monster" parent="Things/wand" index="8"]
+script = ExtResource( 6 )
+
+[node name="drain life" parent="Things/wand" index="9"]
+script = ExtResource( 6 )
+
+[node name="nothing" parent="Things/wand" index="10"]
+script = ExtResource( 6 )
+
+[node name="teleport away" parent="Things/wand" index="11"]
+script = ExtResource( 6 )
+
+[node name="teleport to" parent="Things/wand" index="12"]
+script = ExtResource( 6 )
+
+[node name="cancellation" parent="Things/wand" index="13"]
+script = ExtResource( 6 )
+
+[node name="weapon" parent="Things" index="5"]
+editor/display_folded = true
+
+[node name="mace" parent="Things/weapon" index="0"]
+script = ExtResource( 6 )
+
+[node name="long sword" parent="Things/weapon" index="1"]
+script = ExtResource( 6 )
+
+[node name="short bow" parent="Things/weapon" index="2"]
+script = ExtResource( 6 )
+
+[node name="arrow" parent="Things/weapon" index="3"]
+script = ExtResource( 6 )
+
+[node name="dagger" parent="Things/weapon" index="4"]
+script = ExtResource( 6 )
+
+[node name="two handed sword" parent="Things/weapon" index="5"]
+script = ExtResource( 6 )
+
+[node name="spear" parent="Things/weapon" index="6"]
+editor/display_folded = true
+script = ExtResource( 6 )
+
+[node name="gold" parent="Things" index="6"]
+editor/display_folded = true
+script = ExtResource( 6 )
+
+[node name="food" parent="Things" index="7"]
+editor/display_folded = true
+script = ExtResource( 6 )
+
+[node name="yendor" parent="Things" index="8"]
+editor/display_folded = true
+script = ExtResource( 6 )
+
+
+[editable path="Player"]
+
+[editable path="Monster"]
+
+[editable path="Things"]
+
+[editable path="Things/armor"]
+
+[editable path="Things/potions"]
+
+[editable path="Things/ring"]
+
+[editable path="Things/scrolls"]
+
+[editable path="Things/wand"]
+
+[editable path="Things/weapon"]

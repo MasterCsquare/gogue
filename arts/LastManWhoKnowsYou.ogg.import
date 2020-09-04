@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/LastManWhoKnowsYou.ogg-7283db1638130ef59fd35a91399be334.oggstr"
+
+[deps]
+
+source_file="res://arts/LastManWhoKnowsYou.ogg"
+dest_files=[ "res://.import/LastManWhoKnowsYou.ogg-7283db1638130ef59fd35a91399be334.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

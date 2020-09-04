@@ -1,0 +1,103 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://arts/potions/black_new.png" type="Texture" id=1]
+[ext_resource path="res://arts/potions/brilliant_blue_new.png" type="Texture" id=2]
+[ext_resource path="res://arts/potions/bubbly.png" type="Texture" id=3]
+[ext_resource path="res://arts/potions/cyan_new.png" type="Texture" id=4]
+[ext_resource path="res://arts/potions/golden.png" type="Texture" id=5]
+[ext_resource path="res://arts/potions/potion_puce.png" type="Texture" id=6]
+[ext_resource path="res://arts/potions/yellow_new.png" type="Texture" id=7]
+[ext_resource path="res://arts/potions/magenta_new.png" type="Texture" id=8]
+[ext_resource path="res://arts/potions/white_new.png" type="Texture" id=9]
+[ext_resource path="res://arts/potions/ruby_new.png" type="Texture" id=10]
+[ext_resource path="res://arts/potions/orange_new.png" type="Texture" id=11]
+[ext_resource path="res://arts/potions/potion_fizzy.png" type="Texture" id=12]
+[ext_resource path="res://arts/potions/potion_sky_blue.png" type="Texture" id=13]
+[ext_resource path="res://arts/potions/puce.png" type="Texture" id=14]
+
+[node name="potions" type="Node2D"]
+
+[node name="confusion" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="confusion"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="hallucination" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="hallucination"]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="poison" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="poison"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="gain strength" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="gain strength"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="see invisible" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="see invisible"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="healing" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="healing"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="monster detection" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="monster detection"]
+texture = ExtResource( 7 )
+centered = false
+
+[node name="magic detection" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="magic detection"]
+texture = ExtResource( 8 )
+centered = false
+
+[node name="raise level" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="raise level"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="extra healing" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="extra healing"]
+texture = ExtResource( 10 )
+centered = false
+
+[node name="haste self" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="haste self"]
+texture = ExtResource( 11 )
+centered = false
+
+[node name="restore strength" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="restore strength"]
+texture = ExtResource( 12 )
+centered = false
+
+[node name="blindness" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="blindness"]
+texture = ExtResource( 13 )
+centered = false
+
+[node name="levitation" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="levitation"]
+texture = ExtResource( 14 )
+centered = false
+

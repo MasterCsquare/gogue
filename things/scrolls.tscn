@@ -1,0 +1,124 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://arts/scrolls/scroll-brown.png" type="Texture" id=1]
+[ext_resource path="res://arts/scrolls/scroll-blue.png" type="Texture" id=2]
+[ext_resource path="res://arts/scrolls/scroll-grey.png" type="Texture" id=3]
+[ext_resource path="res://arts/scrolls/scroll-purple.png" type="Texture" id=4]
+[ext_resource path="res://arts/scrolls/blank_paper.png" type="Texture" id=5]
+[ext_resource path="res://arts/scrolls/scroll_old.png" type="Texture" id=6]
+[ext_resource path="res://arts/scrolls/scroll_new.png" type="Texture" id=7]
+[ext_resource path="res://arts/scrolls/scroll-yellow.png" type="Texture" id=8]
+[ext_resource path="res://arts/scrolls/scroll-red.png" type="Texture" id=9]
+[ext_resource path="res://arts/scrolls/scroll-cyan.png" type="Texture" id=10]
+[ext_resource path="res://arts/scrolls/scroll-green.png" type="Texture" id=11]
+
+[node name="scrolls" type="Node2D"]
+
+[node name="monster confusion" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="monster confusion"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="magic mapping" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="magic mapping"]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="hold monster" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="hold monster"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="sleep" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="sleep"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="enchant armor" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="enchant armor"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="identify potion" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="identify potion"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="identify scroll" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="identify scroll"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="identify weapon" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="identify weapon"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="identify armor" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="identify armor"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="identify ring, wand or staff" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="identify ring, wand or staff"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="scare monster" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="scare monster"]
+texture = ExtResource( 7 )
+centered = false
+
+[node name="food detection" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="food detection"]
+texture = ExtResource( 8 )
+centered = false
+
+[node name="teleportation" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="teleportation"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="enchant weapon" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="enchant weapon"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="create monster" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="create monster"]
+texture = ExtResource( 10 )
+centered = false
+
+[node name="remove curse" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="remove curse"]
+texture = ExtResource( 11 )
+centered = false
+
+[node name="aggravate monsters" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="aggravate monsters"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="protect armor" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="protect armor"]
+texture = ExtResource( 9 )
+centered = false
+

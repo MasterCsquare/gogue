@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://arts/rip.png" type="Texture" id=1]
+[ext_resource path="res://arts/wqy-microhei.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://mechanism/new_born.gd" type="Script" id=3]
+[ext_resource path="res://mechanism/exit.gd" type="Script" id=4]
+[ext_resource path="res://arts/LastManWhoKnowsYou.ogg" type="AudioStream" id=5]
+[ext_resource path="res://mechanism/bgm.gd" type="Script" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 70
+font_data = ExtResource( 2 )
+
+[node name="rip" type="TextureRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="dead" type="Label" parent="."]
+margin_left = 518.0
+margin_top = 332.0
+margin_right = 859.0
+margin_bottom = 534.0
+custom_fonts/font = SubResource( 1 )
+text = "你死了
+游戏结束"
+align = 1
+valign = 1
+
+[node name="new" type="Button" parent="."]
+margin_left = 20.0
+margin_top = 620.0
+margin_right = 320.0
+margin_bottom = 720.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_hover = Color( 0.913725, 0.717647, 0.054902, 1 )
+custom_colors/font_color_pressed = Color( 0.913725, 0.717647, 0.054902, 1 )
+custom_constants/hseparation = 0
+action_mode = 0
+text = "新生"
+flat = true
+script = ExtResource( 3 )
+
+[node name="exit" type="Button" parent="."]
+margin_left = 960.0
+margin_top = 620.0
+margin_right = 1260.0
+margin_bottom = 720.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_hover = Color( 0.913725, 0.717647, 0.054902, 1 )
+custom_colors/font_color_pressed = Color( 0.913725, 0.717647, 0.054902, 1 )
+custom_constants/hseparation = 0
+action_mode = 0
+text = "退出"
+flat = true
+script = ExtResource( 4 )
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
+script = ExtResource( 6 )
+

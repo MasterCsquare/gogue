@@ -1,0 +1,212 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://arts/monster/aquator.png" type="Texture" id=1]
+[ext_resource path="res://arts/monster/bat.png" type="Texture" id=2]
+[ext_resource path="res://arts/monster/centaur.png" type="Texture" id=3]
+[ext_resource path="res://arts/monster/dragon.png" type="Texture" id=4]
+[ext_resource path="res://arts/monster/caustic_shrike.png" type="Texture" id=5]
+[ext_resource path="res://arts/monster/flytrap.png" type="Texture" id=6]
+[ext_resource path="res://arts/monster/griffin.png" type="Texture" id=7]
+[ext_resource path="res://arts/monster/hobgobin.png" type="Texture" id=8]
+[ext_resource path="res://arts/monster/ice_monster.png" type="Texture" id=9]
+[ext_resource path="res://arts/monster/jabberwock.png" type="Texture" id=10]
+[ext_resource path="res://arts/monster/bumblebee.png" type="Texture" id=11]
+[ext_resource path="res://arts/monster/leprechaun.png" type="Texture" id=12]
+[ext_resource path="res://arts/monster/medusa.png" type="Texture" id=13]
+[ext_resource path="res://arts/monster/nymph.png" type="Texture" id=14]
+[ext_resource path="res://arts/monster/orc.png" type="Texture" id=15]
+[ext_resource path="res://arts/monster/phantom.png" type="Texture" id=16]
+[ext_resource path="res://arts/monster/quagga.png" type="Texture" id=17]
+[ext_resource path="res://arts/monster/rattlesnake.png" type="Texture" id=18]
+[ext_resource path="res://arts/monster/snake.png" type="Texture" id=19]
+[ext_resource path="res://arts/monster/troll.png" type="Texture" id=20]
+[ext_resource path="res://arts/monster/revenant.png" type="Texture" id=21]
+[ext_resource path="res://arts/monster/vampire.png" type="Texture" id=22]
+[ext_resource path="res://arts/monster/wraith.png" type="Texture" id=23]
+[ext_resource path="res://arts/monster/xeroc.png" type="Texture" id=24]
+[ext_resource path="res://arts/monster/yeti.png" type="Texture" id=25]
+[ext_resource path="res://arts/monster/zombie.png" type="Texture" id=26]
+
+[node name="Monster" type="Node2D"]
+
+[node name="aquator" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="aquator"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="bat" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="bat"]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="centaur" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="centaur"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="dragon" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="dragon"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="emu" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="emu"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="venus flytrap" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="venus flytrap"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="griffin" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="griffin"]
+texture = ExtResource( 7 )
+centered = false
+
+[node name="hobgobin" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="hobgobin"]
+texture = ExtResource( 8 )
+centered = false
+
+[node name="ice monster" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="ice monster"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="jabberwock" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="jabberwock"]
+texture = ExtResource( 10 )
+centered = false
+
+[node name="kestrel" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="kestrel"]
+texture = ExtResource( 11 )
+centered = false
+
+[node name="leprechaun" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="leprechaun"]
+texture = ExtResource( 12 )
+centered = false
+
+[node name="medusa" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="medusa"]
+texture = ExtResource( 13 )
+centered = false
+
+[node name="nymph" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="nymph"]
+texture = ExtResource( 14 )
+centered = false
+
+[node name="orc" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="orc"]
+texture = ExtResource( 15 )
+centered = false
+
+[node name="phantom" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="phantom"]
+texture = ExtResource( 16 )
+centered = false
+
+[node name="quagga" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="quagga"]
+texture = ExtResource( 17 )
+centered = false
+
+[node name="rattlesnake" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="rattlesnake"]
+texture = ExtResource( 18 )
+centered = false
+
+[node name="snake" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="snake"]
+texture = ExtResource( 19 )
+centered = false
+
+[node name="troll" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="troll"]
+texture = ExtResource( 20 )
+centered = false
+
+[node name="black unicorn" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="black unicorn"]
+texture = ExtResource( 21 )
+centered = false
+
+[node name="vampire" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="vampire"]
+texture = ExtResource( 22 )
+centered = false
+
+[node name="wraith" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="wraith"]
+texture = ExtResource( 23 )
+centered = false
+
+[node name="xeroc" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="xeroc"]
+texture = ExtResource( 24 )
+centered = false
+
+[node name="yeti" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="yeti"]
+texture = ExtResource( 25 )
+centered = false
+
+[node name="zombie" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="zombie"]
+texture = ExtResource( 26 )
+centered = false
+

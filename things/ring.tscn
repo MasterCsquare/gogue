@@ -1,0 +1,103 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://arts/ring/brass.png" type="Texture" id=1]
+[ext_resource path="res://arts/ring/copper.png" type="Texture" id=2]
+[ext_resource path="res://arts/ring/emerald.png" type="Texture" id=3]
+[ext_resource path="res://arts/ring/glass.png" type="Texture" id=4]
+[ext_resource path="res://arts/ring/granite.png" type="Texture" id=5]
+[ext_resource path="res://arts/ring/ruby.png" type="Texture" id=6]
+[ext_resource path="res://arts/ring/jade.png" type="Texture" id=7]
+[ext_resource path="res://arts/ring/plain_yellow.png" type="Texture" id=8]
+[ext_resource path="res://arts/ring/ring_gold_magenta.png" type="Texture" id=9]
+[ext_resource path="res://arts/ring/ring_plain_blue.png" type="Texture" id=10]
+[ext_resource path="res://arts/ring/ring_plain_magenta.png" type="Texture" id=11]
+[ext_resource path="res://arts/ring/ring_sapphire.png" type="Texture" id=12]
+[ext_resource path="res://arts/ring/steel.png" type="Texture" id=13]
+[ext_resource path="res://arts/ring/opal.png" type="Texture" id=14]
+
+[node name="ring" type="Node2D"]
+
+[node name="protection" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="protection"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="add strength" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="add strength"]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="sustain strength" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="sustain strength"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="searching" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="searching"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="see invisible" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="see invisible"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="adornment" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="adornment"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="aggravate monster" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="aggravate monster"]
+texture = ExtResource( 7 )
+centered = false
+
+[node name="dexterity" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="dexterity"]
+texture = ExtResource( 8 )
+centered = false
+
+[node name="increase damage" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="increase damage"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="regeneration" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="regeneration"]
+texture = ExtResource( 10 )
+centered = false
+
+[node name="slow digestion" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="slow digestion"]
+texture = ExtResource( 11 )
+centered = false
+
+[node name="teleportation" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="teleportation"]
+texture = ExtResource( 12 )
+centered = false
+
+[node name="stealth" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="stealth"]
+texture = ExtResource( 13 )
+centered = false
+
+[node name="maintain armor" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="maintain armor"]
+texture = ExtResource( 14 )
+centered = false
+

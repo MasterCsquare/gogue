@@ -1,0 +1,445 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://things/things.gd" type="Script" id=1]
+[ext_resource path="res://things/armor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://things/armor.gd" type="Script" id=3]
+[ext_resource path="res://things/potions.tscn" type="PackedScene" id=4]
+[ext_resource path="res://things/ring.tscn" type="PackedScene" id=5]
+[ext_resource path="res://things/scrolls.tscn" type="PackedScene" id=6]
+[ext_resource path="res://things/wand.tscn" type="PackedScene" id=7]
+[ext_resource path="res://things/weapon.tscn" type="PackedScene" id=8]
+[ext_resource path="res://things/weapon.gd" type="Script" id=9]
+[ext_resource path="res://things/gold.tscn" type="PackedScene" id=10]
+[ext_resource path="res://things/food.tscn" type="PackedScene" id=11]
+[ext_resource path="res://things/yendor.tscn" type="PackedScene" id=12]
+
+[node name="things" type="Node2D"]
+visible = false
+script = ExtResource( 1 )
+
+[node name="armor" parent="." instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+
+[node name="leather armor" parent="armor" index="0"]
+editor/display_folded = true
+script = ExtResource( 3 )
+armor = 20
+armor_name = "皮甲"
+
+[node name="ring mail" parent="armor" index="1"]
+editor/display_folded = true
+script = ExtResource( 3 )
+armor = 25
+armor_name = "锁环甲"
+
+[node name="studded leather armor" parent="armor" index="2"]
+editor/display_folded = true
+script = ExtResource( 3 )
+armor = 20
+armor_name = "镶嵌皮甲"
+
+[node name="scale mail" parent="armor" index="3"]
+editor/display_folded = true
+script = ExtResource( 3 )
+armor = 30
+armor_name = "鳞甲"
+
+[node name="chain mail" parent="armor" index="4"]
+editor/display_folded = true
+script = ExtResource( 3 )
+armor = 75
+armor_name = "锁子甲"
+
+[node name="splint mail" parent="armor" index="5"]
+editor/display_folded = true
+script = ExtResource( 3 )
+armor = 80
+armor_name = "板条甲"
+
+[node name="banded mail" parent="armor" index="6"]
+editor/display_folded = true
+script = ExtResource( 3 )
+armor = 90
+armor_name = "环带甲"
+
+[node name="plate mail" parent="armor" index="7"]
+editor/display_folded = true
+script = ExtResource( 3 )
+armor = 150
+armor_name = "板甲"
+
+[node name="potions" parent="." instance=ExtResource( 4 )]
+
+[node name="confusion" parent="potions" index="0"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="hallucination" parent="potions" index="1"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="poison" parent="potions" index="2"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="gain strength" parent="potions" index="3"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="see invisible" parent="potions" index="4"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="healing" parent="potions" index="5"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="monster detection" parent="potions" index="6"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="magic detection" parent="potions" index="7"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="raise level" parent="potions" index="8"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="extra healing" parent="potions" index="9"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="haste self" parent="potions" index="10"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="restore strength" parent="potions" index="11"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="blindness" parent="potions" index="12"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="levitation" parent="potions" index="13"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种药水"
+
+[node name="ring" parent="." instance=ExtResource( 5 )]
+
+[node name="protection" parent="ring" index="0"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="add strength" parent="ring" index="1"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="sustain strength" parent="ring" index="2"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="searching" parent="ring" index="3"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="see invisible" parent="ring" index="4"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="adornment" parent="ring" index="5"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="aggravate monster" parent="ring" index="6"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="dexterity" parent="ring" index="7"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="increase damage" parent="ring" index="8"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="regeneration" parent="ring" index="9"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="slow digestion" parent="ring" index="10"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="teleportation" parent="ring" index="11"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="stealth" parent="ring" index="12"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="maintain armor" parent="ring" index="13"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种戒指"
+
+[node name="scrolls" parent="." instance=ExtResource( 6 )]
+
+[node name="monster confusion" parent="scrolls" index="0"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="magic mapping" parent="scrolls" index="1"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="hold monster" parent="scrolls" index="2"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="sleep" parent="scrolls" index="3"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="enchant armor" parent="scrolls" index="4"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="identify potion" parent="scrolls" index="5"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="identify scroll" parent="scrolls" index="6"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="identify weapon" parent="scrolls" index="7"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="identify armor" parent="scrolls" index="8"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="identify ring, wand or staff" parent="scrolls" index="9"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="scare monster" parent="scrolls" index="10"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="food detection" parent="scrolls" index="11"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="teleportation" parent="scrolls" index="12"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="enchant weapon" parent="scrolls" index="13"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="create monster" parent="scrolls" index="14"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="remove curse" parent="scrolls" index="15"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="aggravate monsters" parent="scrolls" index="16"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="protect armor" parent="scrolls" index="17"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种卷轴"
+
+[node name="wand" parent="." instance=ExtResource( 7 )]
+
+[node name="light" parent="wand" index="0"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="invisibility" parent="wand" index="1"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="lightning" parent="wand" index="2"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="fire" parent="wand" index="3"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="cold" parent="wand" index="4"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="polymorph" parent="wand" index="5"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="magic missile" parent="wand" index="6"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="haste monster" parent="wand" index="7"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="slow monster" parent="wand" index="8"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="drain life" parent="wand" index="9"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="nothing" parent="wand" index="10"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="teleport away" parent="wand" index="11"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="teleport to" parent="wand" index="12"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="cancellation" parent="wand" index="13"]
+editor/display_folded = true
+script = ExtResource( 1 )
+item_name = "某种法杖"
+
+[node name="weapon" parent="." instance=ExtResource( 8 )]
+script = ExtResource( 9 )
+
+[node name="mace" parent="weapon" index="0"]
+editor/display_folded = true
+script = ExtResource( 9 )
+item_name = "狼牙棒"
+attack = 8
+
+[node name="long sword" parent="weapon" index="1"]
+editor/display_folded = true
+script = ExtResource( 9 )
+item_name = "长剑"
+attack = 15
+
+[node name="short bow" parent="weapon" index="2"]
+editor/display_folded = true
+script = ExtResource( 9 )
+item_name = "短弓"
+attack = 15
+
+[node name="arrow" parent="weapon" index="3"]
+editor/display_folded = true
+script = ExtResource( 9 )
+item_name = "箭"
+attack = 1
+
+[node name="dagger" parent="weapon" index="4"]
+editor/display_folded = true
+script = ExtResource( 9 )
+item_name = "匕首"
+attack = 3
+
+[node name="two handed sword" parent="weapon" index="5"]
+editor/display_folded = true
+script = ExtResource( 9 )
+item_name = "双手巨剑"
+attack = 75
+
+[node name="spear" parent="weapon" index="6"]
+script = ExtResource( 9 )
+item_name = "长枪"
+attack = 5
+
+[node name="gold" parent="." instance=ExtResource( 10 )]
+script = ExtResource( 1 )
+
+[node name="food" parent="." instance=ExtResource( 11 )]
+script = ExtResource( 1 )
+item_name = "食物"
+
+[node name="yendor" parent="." instance=ExtResource( 12 )]
+script = ExtResource( 1 )
+item_name = "炎多的护身符"
+
+
+[editable path="armor"]
+
+[editable path="potions"]
+
+[editable path="ring"]
+
+[editable path="scrolls"]
+
+[editable path="wand"]
+
+[editable path="weapon"]

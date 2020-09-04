@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://arts/DeadRomance.ogg" type="AudioStream" id=1]
+[ext_resource path="res://autoloads/bgm.gd" type="Script" id=2]
+
+[node name="Bgm" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+volume_db = -10.0
+script = ExtResource( 2 )
+

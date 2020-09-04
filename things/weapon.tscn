@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://arts/weapon/mace.png" type="Texture" id=1]
+[ext_resource path="res://arts/weapon/long_sword.png" type="Texture" id=2]
+[ext_resource path="res://arts/weapon/shortbow.png" type="Texture" id=3]
+[ext_resource path="res://arts/weapon/arrow.png" type="Texture" id=4]
+[ext_resource path="res://arts/weapon/dagger.png" type="Texture" id=5]
+[ext_resource path="res://arts/weapon/two_handed_sword.png" type="Texture" id=6]
+[ext_resource path="res://arts/weapon/spear.png" type="Texture" id=7]
+
+[node name="weapon" type="Node2D"]
+
+[node name="mace" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="mace"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="long sword" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="long sword"]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="short bow" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="short bow"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="arrow" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="arrow"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="dagger" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="dagger"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="two handed sword" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="two handed sword"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="spear" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="spear"]
+texture = ExtResource( 7 )
+centered = false
+

@@ -1,0 +1,102 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://arts/wand/gem_bone_old.png" type="Texture" id=1]
+[ext_resource path="res://arts/wand/gem_bronze_new.png" type="Texture" id=2]
+[ext_resource path="res://arts/wand/gem_copper_old.png" type="Texture" id=3]
+[ext_resource path="res://arts/wand/staff_3.png" type="Texture" id=4]
+[ext_resource path="res://arts/wand/gem_glass_new.png" type="Texture" id=5]
+[ext_resource path="res://arts/wand/gem_ivory_old.png" type="Texture" id=6]
+[ext_resource path="res://arts/wand/gem_plastic_new.png" type="Texture" id=7]
+[ext_resource path="res://arts/wand/gem_silver_new.png" type="Texture" id=8]
+[ext_resource path="res://arts/wand/staff_0.png" type="Texture" id=9]
+[ext_resource path="res://arts/wand/staff_1.png" type="Texture" id=10]
+[ext_resource path="res://arts/wand/staff_2.png" type="Texture" id=11]
+[ext_resource path="res://arts/wand/staff_4.png" type="Texture" id=12]
+[ext_resource path="res://arts/wand/staff_5.png" type="Texture" id=13]
+
+[node name="wand" type="Node2D"]
+
+[node name="light" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="light"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="invisibility" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="invisibility"]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="lightning" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="lightning"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="fire" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="fire"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="cold" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="cold"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="polymorph" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="polymorph"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="magic missile" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="magic missile"]
+texture = ExtResource( 7 )
+centered = false
+
+[node name="haste monster" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="haste monster"]
+texture = ExtResource( 8 )
+centered = false
+
+[node name="slow monster" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="slow monster"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="drain life" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="drain life"]
+texture = ExtResource( 10 )
+centered = false
+
+[node name="nothing" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="nothing"]
+texture = ExtResource( 11 )
+centered = false
+
+[node name="teleport away" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="teleport away"]
+texture = ExtResource( 12 )
+centered = false
+
+[node name="teleport to" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="teleport to"]
+texture = ExtResource( 13 )
+centered = false
+
+[node name="cancellation" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="cancellation"]
+texture = ExtResource( 13 )
+centered = false
+
